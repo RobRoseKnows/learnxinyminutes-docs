@@ -156,7 +156,7 @@ ls
 
 # These commands have options that control their execution:
 ls -l # Lists every file and directory on a separate line
-ls -t # Sort the directory contents by last-modified date (descending)
+ls -t # Sorts the directory contents by last-modified date (descending)
 ls -R # Recursively `ls` this directory and all of its subdirectories
 
 # Results of the previous command can be passed to the next command as input.
@@ -351,8 +351,8 @@ fgrep "foobar" file.txt
 trap "rm $TEMP_FILE; exit" SIGHUP SIGINT SIGTERM
 
 # `sudo` is used to perform commands as the superuser
-$NAME1=$(whoami)
-$NAME2=$(sudo whoami)
+NAME1=$(whoami)
+NAME2=$(sudo whoami)
 echo "Was $NAME1, then became more powerful $NAME2"
 
 # Read Bash shell builtins documentation with the bash 'help' builtin:

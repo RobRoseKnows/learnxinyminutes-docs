@@ -3,13 +3,16 @@ language: edn
 filename: learnedn.edn
 contributors:
   - ["Jason Yeo", "https://github.com/jsyeo"]
+  - ["Jonathan D Johnston", "https://github.com/jdjohnston"]
 ---
 
 Extensible Data Notation (EDN) is a format for serializing data.
 
-The notation is used internally by Clojure to represent programs. It is also
-used as a data transfer format like JSON. Though it is more commonly used in
-Clojure, there are implementations of EDN for many other languages.
+EDN is a subset of the syntax used by Clojure. Reading data defined by EDN is
+safer than that defined by the full Clojure syntax, especially from untrusted
+sources. EDN is restricted to data, no code. It is similar in intent to JSON.
+Though it is more commonly used in Clojure, there are implementations of EDN
+for many other languages.
 
 The main benefit of EDN over JSON and YAML is that it is extensible. We
 will see how it is extended later on.
@@ -32,7 +35,7 @@ false
 "hungarian breakfast"
 "farmer's cheesy omelette"
 
-; Characters are preceeded by backslashes
+; Characters are preceded by backslashes
 \g \r \a \c \e
 
 ; Keywords start with a colon. They behave like enums. Kind of
@@ -42,7 +45,7 @@ false
 :olives
 
 ; Symbols are used to represent identifiers. They start with #.
-; You can namespace symbols by using /. Whatever preceeds / is
+; You can namespace symbols by using /. Whatever precedes / is
 ; the namespace of the name.
 #spoon
 #kitchen/spoon ; not the same as #spoon

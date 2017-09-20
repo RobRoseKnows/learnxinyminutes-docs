@@ -7,7 +7,7 @@ filename: LearnVim.txt
 ---
 
 
-[Vim](www.vim.org)
+[Vim](http://www.vim.org)
 (Vi IMproved) is a clone of the popular vi editor for Unix. It is a text 
 editor designed for speed and increased productivity, and is ubiquitous in most 
 unix-based systems. It has numerous keybindings for speedy navigation to 
@@ -40,9 +40,9 @@ specific points in the file, and for fast editing.
 
     # Searching in the text
 
-    /word            # Highlights all occurences of word after cursor
-    ?word            # Highlights all occurences of word before cursor
-    n                # Moves cursor to next occurence of word after search
+    /word            # Highlights all occurrences of word after cursor
+    ?word            # Highlights all occurrences of word before cursor
+    n                # Moves cursor to next occurrence of word after search
     N                # Moves cursor to previous occerence of word
 
     :%s/foo/bar/g    # Change 'foo' to 'bar' on every line in the file
@@ -156,6 +156,7 @@ A few important examples of 'Verbs', 'Modifiers', and 'Nouns':
     :later 15m       # Reverse above command
     ddp              # Swap position of consecutive lines, dd then p
     .                # Repeat previous action
+    :w !sudo tee %   # Save the current file as root
 ```
 
 ## Macros
